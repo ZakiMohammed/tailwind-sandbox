@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tailwind.css">
+
+    <title>Navbar | TailwindCSS Sandbox</title>
+
+    <script src="https://kit.fontawesome.com/55ad3149ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="flex flex-wrap justify-between bg-slate-200 px-6">
+        <div class="py-6">
+            <h1 class="font-bold uppercase text-indigo-500">
+                <i class="fas fa-meteor"></i> Amazing Navbar
+            </h1>
+        </div>
+        <div class="sm:hidden">
+            <button class="py-6" onclick="document.querySelector('#menu').classList.toggle('hidden')"><i class="fas fa-bars text-2xl hover:text-indigo-500"></i></button>
+        </div>
+        <div id="menu" class="hidden w-[100%] sm:block sm:w-auto py-1 sm:py-0 border-t border-t-slate-300">
+            <div class="flex justify-evenly h-[100%] flex-col sm:flex-row">
+                <a class="px-2 py-3 sm:px-4 sm:py-6 hover:bg-indigo-200" href="index.html">
+                    <i class="fas fa-house-chimney text-slate-500 pr-1"></i> Home
+                </a>
+                <a class="px-2 py-3 sm:px-4 sm:py-6 hover:bg-indigo-200" href="index.html">
+                    <i class="fa-solid fa-circle-info text-slate-500 pr-1"></i> About
+                </a>
+                <a class="px-2 py-3 sm:px-4 sm:py-6 hover:bg-indigo-200" href="index.html">
+                    <i class="fa-solid fa-headphones text-slate-500 pr-1"></i> Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto my-5 space-y-4">
+        <h1 class="text-2xl font-bold text-gray-500"><i class="fas fa-meteor"></i> Amazing Navbar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem modi ex, nisi necessitatibus saepe.
+            Porro distinctio at mollitia! Et vel odit, amet modi id illo neque doloribus sequi dolorum asperiores natus
+            nobis numquam repellat delectus. Voluptate reprehenderit nemo aperiam? Molestiae aut sed vitae laudantium
+            explicabo, quasi voluptatum debitis? Doloremque in rerum mollitia inventore nemo asperiores totam animi
+            magnam, delectus quas facilis corporis dolorem beatae voluptatem laudantium rem ad quis est quo aspernatur
+            iusto eligendi? Cumque, quos, inventore labore voluptas ducimus illum autem dolorem, neque fuga corporis
+            exercitationem. Officia perspiciatis ratione at id excepturi? Excepturi quos harum inventore maiores veniam!
+        </p>
+    </div>
+
+</body>
+
+</html>

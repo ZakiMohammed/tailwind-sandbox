@@ -8,8 +8,11 @@ Doing setup as per TailwindCSS official docs: https://tailwindcss.com/docs/insta
 
 #### Install TailwindCSS
 ```
-npm i -D tailwindcss
+npm i -D tailwindcss postcss autoprefixer vite
 npx tailwindcss init
+
+// for postcss
+npx tailwindcss init -p
 ```
 
 #### Configure the source
@@ -35,6 +38,7 @@ src/input.css
 #### Run watch command
 ```
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+npx tailwindcss build ./css/tailwind.css -o ./build/tailwind.css --watch
 ```
 
 #### Create index file and include output.css
